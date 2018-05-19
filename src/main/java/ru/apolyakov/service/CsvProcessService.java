@@ -46,11 +46,6 @@ public class CsvProcessService {
         {
             BufferedReader reader = new BufferedReader(new InputStreamReader(file.getInputStream()));
             String result = CsvParser.process(reader, maxResult, sortColumnName);
-            /*ObjectOutput out = null;
-            out = new ObjectOutputStream(bos);
-            out.writeObject(result);
-            out.flush();
-            byte[] yourBytes = bos.toByteArray();*/
             dbFileUploadService.store(result.getBytes(), file.getOriginalFilename());
         } catch (IOException e) {
             e.printStackTrace();

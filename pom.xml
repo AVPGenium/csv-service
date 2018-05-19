@@ -11,7 +11,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.0.1.RELEASE</version>
+        <version>LATEST</version>
     </parent>
 
     <repositories>
@@ -25,9 +25,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
         <javax.inject.version>1</javax.inject.version>
-        <!--<usertype-core.version>LATEST</usertype-core.version>-->
         <fuzzy-csv-version>1.6.11</fuzzy-csv-version>
-        <!--<hibernate-version>5.2.4.Final</hibernate-version>-->
     </properties>
 
     <dependencies>
@@ -72,6 +70,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-redis</artifactId>
+            <version>LATEST</version>
         </dependency>
         <dependency>
             <groupId>redis.clients</groupId>
@@ -86,13 +85,6 @@
             <artifactId>javax.inject</artifactId>
             <version>${javax.inject.version}</version>
         </dependency>
-
-        <!-- Jadira -->
-        <!--<dependency>-->
-            <!--<groupId>org.jadira.usertype</groupId>-->
-            <!--<artifactId>usertype.core</artifactId>-->
-            <!--<version>${usertype-core.version}</version>-->
-        <!--</dependency>-->
 
         <dependency>
             <groupId>com.fasterxml.jackson.datatype</groupId>
@@ -130,67 +122,6 @@
             <artifactId>postgresql</artifactId>
             <scope>runtime</scope>
         </dependency>
-
-        <!--&lt;!&ndash; Spring data &ndash;&gt;-->
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.data</groupId>-->
-            <!--<artifactId>spring-data-jpa</artifactId>-->
-            <!--<version>LATEST</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.data</groupId>-->
-            <!--<artifactId>spring-data-commons</artifactId>-->
-            <!--<version>LATEST</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.data</groupId>-->
-            <!--<artifactId>spring-data-commons-core</artifactId>-->
-            <!--<version>LATEST</version>-->
-        <!--</dependency>-->
-
-        <!--&lt;!&ndash; Hibernate &ndash;&gt;-->
-        <!--<dependency>-->
-            <!--<groupId>org.hibernate</groupId>-->
-            <!--<artifactId>hibernate-core</artifactId>-->
-            <!--<version>${hibernate-version}</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>org.hibernate.javax.persistence</groupId>-->
-            <!--<artifactId>hibernate-jpa-2.1-api</artifactId>-->
-            <!--<version>1.0.0.Draft-16</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>org.hibernate.common</groupId>-->
-            <!--<artifactId>hibernate-commons-annotations</artifactId>-->
-            <!--<version>5.0.1.Final</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>org.hibernate</groupId>-->
-            <!--<artifactId>hibernate-entitymanager</artifactId>-->
-            <!--<version>${hibernate-version}</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>org.hibernate</groupId>-->
-            <!--<artifactId>hibernate-ehcache</artifactId>-->
-            <!--<version>${hibernate-version}</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>org.hibernate</groupId>-->
-            <!--<artifactId>hibernate-validator</artifactId>-->
-            <!--<version>5.3.0.Alpha1</version>-->
-        <!--</dependency>-->
-
-        <!--&lt;!&ndash; JDBC &ndash;&gt;-->
-        <!--<dependency>-->
-            <!--<groupId>org.springframework</groupId>-->
-            <!--<artifactId>spring-jdbc</artifactId>-->
-            <!--<version>LATEST</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>org.springframework</groupId>-->
-            <!--<artifactId>spring-orm</artifactId>-->
-            <!--<version>LATEST</version>-->
-        <!--</dependency>-->
     </dependencies>
 
 
