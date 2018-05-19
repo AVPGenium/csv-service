@@ -60,7 +60,7 @@ public class FileUploadController {
                                    RedirectAttributes redirectAttributes) {
 
         csvProcessService.process(file, maxResult, sortColumnName);
-        storageService.store(file);
+        //storageService.store(file);
         redirectAttributes.addFlashAttribute("message",
                 "You successfully uploaded " + file.getOriginalFilename() + "!");
 
